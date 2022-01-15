@@ -1,0 +1,583 @@
+<html>
+<header>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="Style/Style.css">
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!------------------NAVIGATION BAR------------------>
+<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="container-fluid">
+<div class="navbar-header">
+<a href="#"><img src="img/government-of-pakistan copy.png" style="padding-top:5px;width:40px; height:40px"/></a>
+</div>
+<ul class="nav navbar-nav navbar-left"> 
+<li style="color:white;padding-left:25px;padding-top:10px;font-size:20px">Passport Automation System</li>
+
+</ul>
+
+<ul class="nav navbar-nav navbar-right">
+<li><a href="Home.html">Home </a><li>
+<li><a href="signin.html">SignIn </a><li>
+<li><a href="Signup.html">Signup</a><li>
+<li><a href="FAQs.html" target="_blank">FAQs </a><li>
+<li><a href="#foot">Contact us </a><li>
+</ul>
+</div>  
+</div>
+</header>
+<!--------------------Style---------------------------->
+<style>
+.zoom {
+  border: 5px solid black;
+  padding: 2px;
+  background-color: #2F4F4F;
+  transition: transform .2s; /* Animation */
+  width: 122.5px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.title{
+background-color: black;
+color:yellow;
+width: 150px;
+height: 150px;
+}
+
+a.tip {
+    border-bottom: 1px dashed;
+    text-decoration: none
+}
+a.tip:hover {
+    cursor: help;
+    position: relative
+}
+a.tip span {
+    display: none
+}
+a.tip:hover span {
+    border: #c0c0c0 1px dotted;
+    padding: 5px 20px 5px 5px;
+    display: block;
+    z-index: 100;
+    left: 0px;
+    margin: 10px;
+    width: 250px;
+    position: relative;
+    top: -150px;
+    text-decoration: none
+}
+
+</style>
+<!-------------------Collage----------------------->
+<body  style="background-color:black">
+<table id="tableStyle">
+<tr>
+<center>
+</br>
+</br>
+</br>
+<label style="font-size:50px;color:	#DAA520">Explore Pakistan</label>
+</center>
+</tr>
+<tr>
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Badshahi_Mosque" class="tip">
+<img src="collage/Badshahimosque-lahore.jpg" title="Badshahi mosque Lahore" "height="100px" width="50px" class="zoom " /><br></br>
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Tomb_of_Allama_Iqbal">
+<img src="collage/allama iqbal tomb.jpg" title="Allama Iqbal Tomb" height="100px" width="50px" class="zoom "/><br></br>
+
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Altit_Fort">
+<img src="collage/altit fort-hunza.jpg" title="Altit Fort Hunza" height="100px" class="zoom" width="50px"/><br></br>
+
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Attabad_Lake">
+<img src="collage/attabad lake Hunza.jpg" title="Attabad Lake Hunza" height="100px" class="zoom" width="50px"/><br></br>
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Bhutto_family_mausoleum">
+<img src="collage/bhutto museum-larkana.jpg" title="Bhutto Mausoleum" height="100px" class="zoom" width="50px"/><br></br>
+
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Borith_Lake">
+<img src="collage/borith lake hunza.jpg" title="Borith Lake" height="100px" class="zoom" width="50px"/><br></br>
+
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Islamabad">
+<img src="collage/capital of pakistan islamabad.jpg" title="Capital Of Pakistan-Islamabad" class="zoom" height="100px" width="50px"/><br></br>
+
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/The_Centaurus">
+<img src="collage/centaurus mall islamabad.jpg" title="The Centaurus-Islamabad" height="100px" width="50px" class="zoom"/><br></br>
+
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Chaukhandi_tombs">
+<img src="collage/chaukhandi_tombs-.jpg"title="Chaunkhandi Tombs" height="100px" width="50px"class="zoom"/><br></br>
+
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Kumrat_Valley">
+<img src="collage/kumrat valley.jpg"title="Kumrat Valley" height="100px" width="50px"class="zoom"/><br></br>
+
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Hiran_Minar">
+<img src="collage/HiranMinarSheikhupura.jpg"title="Hiran Minar" height="100px" width="50px"class="zoom"/><br></br>
+
+</a>
+</td>
+
+
+</tr>
+
+
+<tr>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Derawar_Fort">
+<img src="collage/derawar fort bhawalpur.jpg" title="Derawar Fort" height="100px" class="zoom" width="50px"/><br></br>
+
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank"href="https://en.wikipedia.org/wiki/Faisal_Mosque">
+<img src="collage/faisal-mosque-lahore.jpg" title="Faisal Mosque Islamabad" height="100px" width="50px" class="zoom" /><br></br>
+
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank"href="https://en.wikipedia.org/wiki/Fatima_Jinnah_Park">
+<img src="collage/fatima jinnah park islamabad.jpg" title="Fatima Jinnah Park" height="100px" width="50px" class="zoom" /><br></br>
+
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank"href="https://en.wikipedia.org/wiki/Fort_Road_Food_Street">
+<img src="collage/food-street-lahore.jpg" title="Food Street Lahore" height="100px" width="50px" class="zoom" /><br></br>
+
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Fort_Munro">
+<img src="collage/fort-munro.jpg" title="Fort Munro" height="100px" width="50px" class="zoom"  /><br></br>
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Swat_River">
+<img src="collage/gabral river upper kalam.jpg" title="Gabral River-Swat" height="100px" width="50px" class="zoom"  /><br></br>
+
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Hindu_Gymkhana,_Karachi">
+<img src="collage/hindu gymkhanna karachi.jpg" title="Hindu Gymkhana Karachi" height="100px" width="50px" class="zoom"  /><br></br>
+
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Islamia_College_University">
+<img src="collage/islamia college peshawar.jpg" title="Islamia College University-Peshawar" height="100px" width="50px" class="zoom"  /><br></br>
+
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Karimabad,_Gilgit-Baltistan">
+<img src="collage/karimabad pakistan.jpeg" title="Karimabad Gilgit Baltistan" height="100px" width="50px"  class="zoom" /><br></br>
+
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Quaid-e-Azam_Residency">
+<img src="collage/qr.jpg" title="Quaid-E-Azam Residency" height="100px" width="50px" class="zoom" /><br></br>
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Shakarparian">
+<img src="collage/sk.jpg" title="ShakarParian Islamabad"  height="100px" width="50px" class="zoom" /><br></br>
+</a>
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Tomb_of_Jahangir">
+<img src="collage/jahangir tomb lahore.jpg" title="Tomb of Jahangir-Lahore"height="100px" width="50px" class="zoom"  /><br></br>
+
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Kaghan_Valley">
+<img src="collage/kaghan valley pakistan.jpg" title="Kaghan Valley" height="100px" width="50px"  class="zoom" /><br></br>
+
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Kalam_Valley">
+<img src="collage/kalam.jpg" title="Kallam Valley"  height="100px" width="50px" class="zoom" /><br></br>
+
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Karakoram">
+<img src="collage/karakoram mauntains.jpg" title="Karakoram Mountains" height="100px" width="50px" class="zoom" /><br></br>
+
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Lahore_Fort">
+<img src="collage/lahore-fort.jpg" title="Lahore Fort" height="100px" width="50px" class="zoom" /><br></br>
+
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Lahore_Museum">
+<img src="collage/lahore-museum.jpg" title="Lahore Museum" height="100px" width="50px" class="zoom" /><br></br>
+
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Mahodand_Lake">
+<img src="collage/mahodand lake kpk.png" title="Mahodand Lake" height="100px" width="50px" class="zoom"  /><br></br>
+
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank"  href="https://en.wikipedia.org/wiki/Makli_Necropolis">
+<img src="collage/makli-hills thatha sindh.jpg" title="Makli Hills-Sindh" height="100px" width="50px" class="zoom"  /><br></br>
+
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank"  href="https://en.wikipedia.org/wiki/Margalla_Hills">
+<img src="collage/margalla hills islamabad.jpg" title="Margalla Hills" height="100px" width="50px" class="zoom" /><br></br>
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Pakistan_Museum_of_Natural_History">
+<img src="collage/pk.jpg" title="Pakistan Museum of Natural History" height="100px" width="50px" class="zoom" /><br></br>
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Lok_Virsa_Museum">
+<img src="collage/lok.jpg" title="Lok Virsa Islamabad"  height="100px" width="50px" class="zoom" /><br></br>
+</a>
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<b>
+<a target="_blank"  href="https://en.wikipedia.org/wiki/Wazir_Khan_Mosque">
+<img src="collage/masjid wazirkhan lahore.jpg" title="Wazir Khan Mosque" height="100px" width="50px" class="zoom"  /><br></br>
+
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank"   href="https://monal.themonal.com/">
+<img src="collage/monal restaurant islamabad.jpg" title="Monal-Islamabad" height="100px" width="50px" class="zoom"  /><br></br>
+
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank"   href="https://en.wikipedia.org/wiki/List_of_lakes_of_Pakistan">
+<img src="collage/Mountains-and-Lake-Baltistan-Pakistan.jpg" title="Mountains and Lake-Baltistan" height="100px" width="50px" class="zoom" /><br></br>
+
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank"  href="https://en.wikipedia.org/wiki/Naltar_Lakes">
+<img src="collage/naltar valley gilgit balkistan.jpg" title="Naltar Lakes-Gilgit" height="100px" width="50px" class="zoom"  /><br></br>
+
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank"  href="https://en.wikipedia.org/wiki/Nathia_Gali">
+<img src="collage/Nathia-Gali Murree.jpg" title="Nathia Gali-Murree"  height="100px" width="50px" class="zoom" /><br></br>
+</td>
+
+<td>
+<b>
+<a target="_blank"  href="https://en.m.wikipedia.org/wiki/File:Nishan-E-Manzil_Gujranwala_20140925.jpg">
+<img src="collage/Nishan-E-Manzil_Gujranwala_.jpg" title="Nishan-E-Manzil Gujranwala" height="100px" width="50px" class="zoom"  /><br></br>
+
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank"  href="https://en.wikipedia.org/wiki/Noor_Mahal">
+<img src="collage/noor-mahal bahawlapur pakistan.jpg" title="Noor-Mahal Bahawalpur" height="100px" width="50px" class="zoom"  /><br></br>
+
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Pakistan_Monument">
+<img src="collage/pakistan-monoment-islamabad.jpg" title="Pakistan Monument" height="100px" width="50px" class="zoom" /><br></br>
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Nishan-e-Pakistan">
+<img src="collage/nishan-e-pakistan karachi.jpg" title="Nishan-E-Pakistan Karachi"  height="100px" width="50px" class="zoom" /><br></br>
+</a>
+</td>
+
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Wagah">
+<img src="collage/babe azadi.jpg" title="Baba-E-Azadi Lahore" height="100px" width="50px" class="zoom" /><br></br>
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Kot_Diji_Fort">
+<img src="collage/kotdijli.jpg" title="Kot Dijli Fort Khairpur"  height="100px" width="50px" class="zoom" /><br></br>
+</a>
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Lahore_Fort">
+<img src="collage/shahi-qila lahore.png" title="Shahi-Qila Lahore" height="100px" width="50px" class="zoom" /><br></br>
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank"  href="https://en.wikipedia.org/wiki/Mazar-e-Quaid">
+<img src="collage/quaid tomb karachi.jpg" title="Mazar-E-Quaid Karachi" height="100px" width="50px" class="zoom" /><br></br>
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Ranikot_Fort">
+<img src="collage/ranikot fort -sindh.jpg" title="Ranikot Fort Sindh" height="100px" width="50px" class="zoom" /><br></br>
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Rukn-e-Alam">
+<img src="collage/rukh-e-alam multan.jpg" title="Rukh-E-Alam Multan" height="100px" width="50px" class="zoom" /><br></br>
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Lake_Saiful_Muluk">
+<img src="collage/saif-ul-muluk-naran.jpg" title="Saif ul Muluk Naran" height="100px" width="50px" class="zoom" /><br></br>
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Swat_District">
+<img src="collage/swat valley.jpg" title="Swat Valley" height="100px" width="50px" class="zoom" /><br></br>
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Tomb_of_Bibi_Jawindi">
+<img src="collage/tomb of bibi jawindi.jpg" title="Tomb of Bibi Jawindi" height="100px" width="50px" class="zoom" /><br></br>
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Tomb_of_Nur_Jahan">
+<img src="collage/tomb of nur jahan-shahdra.jpg" title="Tomb of Nur Jahan" height="100px" width="50px" class="zoom" /><br></br>
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Sateen_Jo_Aastan">
+<img src="collage/tomb of seven sisters-sindh.jpg" title="Sateen-Jo-Aastan Sindh" height="100px" width="50px" class="zoom" /><br></br>
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Babusar_Pass">
+<img src="collage/bb.jpg" title="Babusar Top" height="100px" width="50px" class="zoom" /><br></br>
+</a>
+</td>
+
+<td>
+<b>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Mahabat_Khan_Mosque">
+<img src="collage/mahabat khan.jpg" title="MahaBat Khan Mosque Peshawar" height="100px" width="50px" class="zoom" /><br></br>
+</a>
+</td>
+</tr>
+</table>
+<br><br><br><br><br><br><br><br><br>
+</body>
+<!--------------------------------footer---------------------------------->
+<footer id="foot">
+<div class="navbar navbar-inverse navbar-fixed-bottom">
+<div class="scroll-content">
+<marquee scrollamount="10"
+direction="left"
+behavior="scroll"
+onmouseover="this.stop();" onmouseout="this.start();"bgcolor="black" >
+    <div class="scroll-row">
+      <div class="scroll-block" >
+         <div class="scroll-image"> &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp 
+          <img src="img/impn.png" height="70px" width="190px">
+		  <a target="_blank" href="Notices_Web/notice 1.html"">
+		  <img src="notices/1.jpg" height="90px" width="130px"style="border: 3px solid black;padding: 2px;background-color: #2F4F4F;"></a>
+          <a target="_blank" href ="Notices_Web/notice 2.html">
+		  <img src="notices/2.jpg" height="90px" width="130px"style="border: 3px solid black;padding: 2px;background-color: #2F4F4F;"></a>
+          <a target="_blank" href ="Notices_Web/notice 3.html">
+		  <img src="notices/3.jpg" height="90px" width="130px"style="border: 3px solid black;padding: 2px;background-color: #2F4F4F;"></a>
+          <a target="_blank" href ="Notices_Web/notice 4.html">
+		  <img src="notices/4.jpg" height="90px" width="130px"style="border: 3px solid black;padding: 2px;background-color: #2F4F4F;"></a>
+          <a target="_blank" href ="Notices_Web/notice 5.html">
+		  <img src="notices/5.jpg" height="90px" width="130px"style="border: 3px solid black;padding: 2px;background-color: #2F4F4F;"></a>
+          <a target="_blank" href ="Notices_Web/notice 6.html">
+		  <img src="notices/6.jpg" height="90px" width="130px"style="border: 3px solid black;padding: 2px;background-color: #2F4F4F;"></a>
+          <a target="_blank" href ="Notices_Web/notice 7.html">
+		  <img src="notices/7.jpg" height="90px" width="130px"style="border: 3px solid black;padding: 2px;background-color: #2F4F4F;"></a>
+          <a target="_blank" href ="Notices_Web/notice 8.html">
+		  <img src="notices/8.jpg" height="90px" width="130px"style="border: 3px solid black;padding: 2px;background-color: #2F4F4F;"></a>
+          <a target="_blank" href ="Notices_Web/notice 9.html">
+		  <img src="notices/9.jpg" height="90px" width="130px"style="border: 3px solid black;padding: 2px;background-color: #2F4F4F;"></a>
+          <a target="_blank" href ="Notices_Web/notice 10.html">
+		  <img src="notices/10.jpg" height="90px" width="130px"style="border: 3px solid black;padding: 2px;background-color: #2F4F4F;"></a>
+          <a target="_blank" href ="Notices_Web/notice 11.html">
+		  <img src="notices/11.jpg" height="90px" width="130px"style="border: 3px solid black;padding: 2px;background-color: #2F4F4F;"></a>
+          <a target="_blank" href ="Notices_Web/notice 12.html">
+		  <img src="notices/12.jpg" height="90px" width="130px"style="border: 3px solid black;padding: 2px;background-color: #2F4F4F;"></a>
+          
+		  
+        </div>
+      </div>
+</div>
+</marquee>
+</div>
+<div style = "background-color:black">
+
+<img src="img/government-of-pakistan copy.png" style="height:50px;padding-left:20px"/>
+<label style="color:white;padding-left:300px"> ©2019 Directorate General Immigration and Passports - All rights reserved </label> 
+<a href="http://www.gmail.com" target="_blank"><img src="img/google.png" style="width:30px;margin-left:15%"/></a> &nbsp &nbsp &nbsp 
+<a href="http://www.twitter.com" target="_blank"><img src="img/twiiter-icon.png" style="width:30px"/></a> &nbsp &nbsp &nbsp 
+<a href="http://www.facebook.com" target="_blank"><img src="img/fb.png" style="width:30px;"/></a> &nbsp &nbsp &nbsp 
+<a href="http://www.youtube.com" target="_blank"><img src="img/youtube-logo.png" style="width:30px;"/></a>&nbsp &nbsp &nbsp 
+<a href="http://www.linkedin.com" target="_blank"><img src="img/linkedin-icon.png" style="width:30px;"/></a><br>
+<center><label style="color:white;padding-right:100px"><a href="https://policies.google.com/privacy?hl=en-US" target="_blank"> Privacy Policy | Terms & Conditions</label></a></center>
+</div>
+</div>
+</footer> 
+</html>

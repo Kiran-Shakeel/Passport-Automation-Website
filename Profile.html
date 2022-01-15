@@ -1,0 +1,634 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/mystyle.css">
+
+<script src="java.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+    
+<body>
+ <!------------------------------------NavBar-------------------------------------->
+<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="container-fluid">
+<div class="navbar-header">
+<a href="#"><img src="img/government-of-pakistan copy.png" style="padding-top:5px;width:40px; height:40px"/></a>
+</div>
+<ul class="nav navbar-nav navbar-left"> 
+<li style="color:white;padding-left:25px;padding-top:10px;font-size:20px">Passport Automation System</li>
+
+</ul>
+
+<ul class="nav navbar-nav navbar-right">
+<li><a href="Home.html">Home </a><li>
+<li><a href="FAQs.html" target="_blank">FAQs </a><li>
+<li><a href="#foot">Contact us </a><li>
+</ul>
+</div>  
+</div>
+</br></br>
+
+<!--------------------------------image----------->
+ <img src="img/how-to-apply-for-passport-online.jpg" style="width:100%;height:340px"/>
+<br><br>
+
+
+
+ <!--------------------------------Registration--------------------->
+<div class="container-fluid" >
+<div class="col-xs-12"> <!---------total cols 12----------->
+
+<div class="col-xs-2" >   <!---------cols 2----------->
+<ul class="nav nav-pills nav-stacked">
+<li class="active"><a href="#reg" data-toggle="pill" >Registration</a></li>
+<li style="pointer-events: none;" id="attachpill"><a href="#attach" data-toggle="pill" >Attachments</a></li>
+<li style="pointer-events: none;" id="commen"><a href="#comm" data-toggle="pill" >Comments</a></li>
+
+</ul>
+</div>
+
+<div class=" col-xs-7" style="height:1300px;">
+<div class="tab-content">
+
+
+<div id="reg" class="tab-pane fade in active">
+<br>
+<ul class="nav nav-tabs">
+<li class="active"><a data-toggle="tab" href="#1">Registration</a></li></ul>
+<br>
+<div class="tab-content">
+<div id="1" class="tab-pane fade in active">
+<form class="form-group" >
+
+<label>Name:</label>
+<input type="text" placeholder="Username" class="form-control simpleinput" id="name" />
+<span id="sname" style="display:none;color:red">*Enter Name</span>
+<br/>
+
+<label>Father name:</label>
+<input type="text" placeholder="Enter Father name" class="form-control" id="fname"  />
+<span id="sfname" style="display:none;color:red">*Enter father name</span>
+<br/>
+
+<label>Mother name:</label>
+<input type="text" placeholder="Enter Mother name" class="form-control" id="mname"  />
+<span id="smname" style="display:none;color:red">*Enter mother name</span>
+<br/>
+
+<label >Phone no:</label>
+<input type="tel" id="phn"  placeholder="Enter phone number" class="form-control" />
+<span id="sphn" style="display:none;color:red">*Enter phone no</span>
+<br/>
+
+<label >CNIC:</label>
+<input type="text"  id="cnic" placeholder="Enter cnic" class="form-control" />
+<span id="scnic" style="display:none;color:red">*Enter cnic</span>
+<br/>
+
+<label >Father CNIC:</label>
+<input type="text"  id="fcnic" placeholder="Enter father cnic" class="form-control" />
+<span id="sfcnic" style="display:none;color:red">*Enter father cnic</span>
+<br/>
+
+<label >City:</label>
+<select required id="city" class="form-control">
+<option value="" disabled selected>--Select City--</option>
+<option value="Islamabad">Islamabad</option>
+    <option value="" disabled>Punjab Cities</option>
+    <option value="Ahmed Nager Chatha">Ahmed Nager Chatha</option>
+    <option value="Ahmadpur East">Ahmadpur East</option>
+    <option value="Ali Khan Abad">Ali Khan Abad</option>
+    <option value="Alipur">Alipur</option>
+    <option value="Arifwala">Arifwala</option>
+    <option value="Attock">Attock</option>
+    <option value="Bhera">Bhera</option>
+    <option value="Bhalwal">Bhalwal</option>
+    <option value="Bahawalnagar">Bahawalnagar</option>
+    <option value="Bahawalpur">Bahawalpur</option>
+    <option value="Bhakkar">Bhakkar</option>
+    <option value="Burewala">Burewala</option>
+    <option value="Chillianwala">Chillianwala</option>
+    <option value="Chakwal">Chakwal</option>
+    <option value="Chichawatni">Chichawatni</option>
+    <option value="Chiniot">Chiniot</option>
+    <option value="Chishtian">Chishtian</option>
+    <option value="Daska">Daska</option>
+    <option value="Darya Khan">Darya Khan</option>
+    <option value="Dera Ghazi Khan">Dera Ghazi Khan</option>
+    <option value="Dhaular">Dhaular</option>
+    <option value="Dina">Dina</option>
+    <option value="Dinga">Dinga</option>
+    <option value="Dipalpur">Dipalpur</option>
+    <option value="Faisalabad">Faisalabad</option>
+    <option value="Fateh Jhang">Fateh Jang</option>
+    <option value="Ghakhar Mandi">Ghakhar Mandi</option>
+    <option value="Gojra">Gojra</option>
+    <option value="Gujranwala">Gujranwala</option>
+    <option value="Gujrat">Gujrat</option>
+    <option value="Gujar Khan">Gujar Khan</option>
+    <option value="Hafizabad">Hafizabad</option>
+    <option value="Haroonabad">Haroonabad</option>
+    <option value="Hasilpur">Hasilpur</option>
+    <option value="Haveli">Haveli</option>
+    <option value="Lakha">Lakha</option>
+    <option value="Jalalpur">Jalalpur</option>
+    <option value="Jattan">Jattan</option>
+    <option value="Jampur">Jampur</option>
+    <option value="Jaranwala">Jaranwala</option>
+    <option value="Jhang">Jhang</option>
+    <option value="Jhelum">Jhelum</option>
+    <option value="Kalabagh">Kalabagh</option>
+    <option value="Karor Lal Esan">Karor Lal Esan</option>
+    <option value="Kasur">Kasur</option>
+    <option value="Kamalia">Kamalia</option>
+    <option value="Kamoke">Kamoke</option>
+    <option value="Khanewal">Khanewal</option>
+    <option value="Khanpur">Khanpur</option>
+    <option value="Kharian">Kharian</option>
+    <option value="Khushab">Khushab</option>
+    <option value="Kot Adu">Kot Adu</option>
+    <option value="Jauharabad">Jauharabad</option>
+    <option value="Lahore">Lahore</option>
+    <option value="Lalamusa">Lalamusa</option>
+    <option value="Layyah">Layyah</option>
+    <option value="Liaquat Pur">Liaquat Pur</option>
+    <option value="Lodhran">Lodhran</option>
+    <option value="Malakwal">Malakwal</option>
+    <option value="Mamoori">Mamoori</option>
+    <option value="Mailsi">Mailsi</option>
+    <option value="Mandi Bahauddin">Mandi Bahauddin</option>
+    <option value="mian Channu">Mian Channu</option>
+    <option value="Mianwali">Mianwali</option>
+    <option value="Multan">Multan</option>
+    <option value="Murree">Murree</option>
+    <option value="Muridke">Muridke</option>
+    <option value="Mianwali Bangla">Mianwali Bangla</option>
+    <option value="Muzaffargarh">Muzaffargarh</option>
+    <option value="Narowal">Narowal</option>
+    <option value="Okara">Okara</option>
+    <option value="Renala Khurd">Renala Khurd</option>
+    <option value="Pakpattan">Pakpattan</option>
+    <option value="Pattoki">Pattoki</option>
+    <option value="Pir Mahal">Pir Mahal</option>
+    <option value="Qaimpur">Qaimpur</option>
+    <option value="Qila Didar Singh">Qila Didar Singh</option>
+    <option value="Rabwah">Rabwah</option>
+    <option value="Raiwind">Raiwind</option>
+    <option value="Rajanpur">Rajanpur</option>
+    <option value="Rahim Yar Khan">Rahim Yar Khan</option>
+    <option value="Rawalpindi">Rawalpindi</option>
+    <option value="Sadiqabad">Sadiqabad</option>
+    <option value="Safdarabad">Safdarabad</option>
+    <option value="Sahiwal">Sahiwal</option>
+    <option value="Sangla Hill">Sangla Hill</option>
+    <option value="Sarai Alamgir">Sarai Alamgir</option>
+    <option value="Sargodha">Sargodha</option>
+    <option value="Shakargarh">Shakargarh</option>
+    <option value="Sheikhupura">Sheikhupura</option>
+    <option value="Sialkot">Sialkot</option>
+    <option value="Sohawa">Sohawa</option>
+    <option value="Soianwala">Soianwala</option>
+    <option value="Siranwali">Siranwali</option>
+    <option value="Talagang">Talagang</option>
+    <option value="Taxila">Taxila</option>
+    <option value="Toba Tek  Singh">Toba Tek Singh</option>
+    <option value="Vehari">Vehari</option>
+    <option value="Wah Cantonment">Wah Cantonment</option>
+    <option value="Wazirabad">Wazirabad</option>
+    <option value="" disabled>Sindh Cities</option>
+    <option value="Badin">Badin</option>
+    <option value="Bhirkan">Bhirkan</option>
+    <option value="Rajo Khanani">Rajo Khanani</option>
+    <option value="Chak">Chak</option>
+    <option value="Dadu">Dadu</option>
+    <option value="Digri">Digri</option>
+    <option value="Diplo">Diplo</option>
+    <option value="Dokri">Dokri</option>
+    <option value="Ghotki">Ghotki</option>
+    <option value="Haala">Haala</option>
+    <option value="Hyderabad">Hyderabad</option>
+    <option value="Islamkot">Islamkot</option>
+    <option value="Jacobabad">Jacobabad</option>
+    <option value="Jamshoro">Jamshoro</option>
+    <option value="Jungshahi">Jungshahi</option>
+    <option value="Kandhkot">Kandhkot</option>
+    <option value="Kandiaro">Kandiaro</option>
+    <option value="Karachi">Karachi</option>
+    <option value="Kashmore">Kashmore</option>
+    <option value="Keti Bandar">Keti Bandar</option>
+    <option value="Khairpur">Khairpur</option>
+    <option value="Kotri">Kotri</option>
+    <option value="Larkana">Larkana</option>
+    <option value="Matiari">Matiari</option>
+    <option value="Mehar">Mehar</option>
+    <option value="Mirpur Khas">Mirpur Khas</option>
+    <option value="Mithani">Mithani</option>
+    <option value="Mithi">Mithi</option>
+    <option value="Mehrabpur">Mehrabpur</option>
+    <option value="Moro">Moro</option>
+    <option value="Nagarparkar">Nagarparkar</option>
+    <option value="Naudero">Naudero</option>
+    <option value="Naushahro Feroze">Naushahro Feroze</option>
+    <option value="Naushara">Naushara</option>
+    <option value="Nawabshah">Nawabshah</option>
+    <option value="Nazimabad">Nazimabad</option>
+    <option value="Qambar">Qambar</option>
+    <option value="Qasimabad">Qasimabad</option>
+    <option value="Ranipur">Ranipur</option>
+    <option value="Ratodero">Ratodero</option>
+    <option value="Rohri">Rohri</option>
+    <option value="Sakrand">Sakrand</option>
+    <option value="Sanghar">Sanghar</option>
+    <option value="Shahbandar">Shahbandar</option>
+    <option value="Shahdadkot">Shahdadkot</option>
+    <option value="Shahdadpur">Shahdadpur</option>
+    <option value="Shahpur Chakar">Shahpur Chakar</option>
+    <option value="Shikarpaur">Shikarpaur</option>
+    <option value="Sukkur">Sukkur</option>
+    <option value="Tangwani">Tangwani</option>
+    <option value="Tando Adam Khan">Tando Adam Khan</option>
+    <option value="Tando Allahyar">Tando Allahyar</option>
+    <option value="Tando Muhammad Khan">Tando Muhammad Khan</option>
+    <option value="Thatta">Thatta</option>
+    <option value="Umerkot">Umerkot</option>
+    <option value="Warah">Warah</option>
+    <option value="" disabled>Khyber Cities</option>
+    <option value="Abbottabad">Abbottabad</option>
+    <option value="Adezai">Adezai</option>
+    <option value="Alpuri">Alpuri</option>
+    <option value="Akora Khattak">Akora Khattak</option>
+    <option value="Ayubia">Ayubia</option>
+    <option value="Banda Daud Shah">Banda Daud Shah</option>
+    <option value="Bannu">Bannu</option>
+    <option value="Batkhela">Batkhela</option>
+    <option value="Battagram">Battagram</option>
+    <option value="Birote">Birote</option>
+    <option value="Chakdara">Chakdara</option>
+    <option value="Charsadda">Charsadda</option>
+    <option value="Chitral">Chitral</option>
+    <option value="Daggar">Daggar</option>
+    <option value="Dargai">Dargai</option>
+    <option value="Darya Khan">Darya Khan</option>
+    <option value="dera Ismail Khan">Dera Ismail Khan</option>
+    <option value="Doaba">Doaba</option>
+    <option value="Dir">Dir</option>
+    <option value="Drosh">Drosh</option>
+    <option value="Hangu">Hangu</option>
+    <option value="Haripur">Haripur</option>
+    <option value="Karak">Karak</option>
+    <option value="Kohat">Kohat</option>
+    <option value="Kulachi">Kulachi</option>
+    <option value="Lakki Marwat">Lakki Marwat</option>
+    <option value="Latamber">Latamber</option>
+    <option value="Madyan">Madyan</option>
+    <option value="Mansehra">Mansehra</option>
+    <option value="Mardan">Mardan</option>
+    <option value="Mastuj">Mastuj</option>
+    <option value="Mingora">Mingora</option>
+    <option value="Nowshera">Nowshera</option>
+    <option value="Paharpur">Paharpur</option>
+    <option value="Pabbi">Pabbi</option>
+    <option value="Peshawar">Peshawar</option>
+    <option value="Saidu Sharif">Saidu Sharif</option>
+    <option value="Shorkot">Shorkot</option>
+    <option value="Shewa Adda">Shewa Adda</option>
+    <option value="Swabi">Swabi</option>
+    <option value="Swat">Swat</option>
+    <option value="Tangi">Tangi</option>
+    <option value="Tank">Tank</option>
+    <option value="Thall">Thall</option>
+    <option value="Timergara">Timergara</option>
+    <option value="Tordher">Tordher</option>
+    <option value="" disabled>Balochistan Cities</option>
+    <option value="Awaran">Awaran</option>
+    <option value="Barkhan">Barkhan</option>
+    <option value="Chagai">Chagai</option>
+    <option value="Dera Bugti">Dera Bugti</option>
+    <option value="Gwadar">Gwadar</option>
+    <option value="Harnai">Harnai</option>
+    <option value="Jafarabad">Jafarabad</option>
+    <option value="Jhal Magsi">Jhal Magsi</option>
+    <option value="Kacchi">Kacchi</option>
+    <option value="Kalat">Kalat</option>
+    <option value="Kech">Kech</option>
+    <option value="Kharan">Kharan</option>
+    <option value="Khuzdar">Khuzdar</option>
+    <option value="Killa Abdullah">Killa Abdullah</option>
+    <option value="Killa Saifullah">Killa Saifullah</option>
+    <option value="Kohlu">Kohlu</option>
+    <option value="Lasbela">Lasbela</option>
+    <option value="Lehri">Lehri</option>
+    <option value="Loralai">Loralai</option>
+    <option value="Mastung">Mastung</option>
+    <option value="Musakhel">Musakhel</option>
+    <option value="Nasirabad">Nasirabad</option>
+    <option value="Nushki">Nushki</option>
+    <option value="Panjgur">Panjgur</option>
+    <option value="Pishin valley">Pishin Valley</option>
+    <option value="Quetta">Quetta</option>
+    <option value="Sherani">Sherani</option>
+    <option value="Sibi">Sibi</option>
+    <option value="Sohbatpur">Sohbatpur</option>
+    <option value="Washuk">Washuk</option>
+    <option value="Zhob">Zhob</option>
+    <option value="Ziarat">Ziarat</option>
+</select>
+<span id="scity" style="display:none;color:red">*Select city</span>
+<br/>
+
+<label >Religion:</label>
+<select required id="rel" class="form-control" >
+<option value="" selected="selected" disabled="disabled">-- select one --</option>
+    <option value="African Traditional &amp; Diasporic">African Traditional &amp; Diasporic</option>
+    <option value="Agnostic">Agnostic</option>
+    <option value="Atheist">Atheist</option>
+    <option value="Baha'i">Baha'i</option>
+    <option value="Buddhism">Buddhism</option>
+    <option value="Cao Dai">Cao Dai</option>
+    <option value="Chinese traditional religion">Chinese traditional religion</option>
+    <option value="Christianity">Christianity</option>
+    <option value="Hinduism">Hinduism</option>
+    <option value="Islam">Islam</option>
+    <option value="Jainism">Jainism</option>
+    <option value="Juche">Juche</option>
+    <option value="Judaism">Judaism</option>
+    <option value="Neo-Paganism">Neo-Paganism</option>
+    <option value="Nonreligious">Nonreligious</option>
+    <option value="Rastafarianism">Rastafarianism</option>
+    <option value="Secular">Secular</option>
+    <option value="Shinto">Shinto</option>
+    <option value="Sikhism">Sikhism</option>
+    <option value="Spiritism">Spiritism</option>
+    <option value="Tenrikyo">Tenrikyo</option>
+    <option value="Unitarian-Universalism">Unitarian-Universalism</option>
+    <option value="Zoroastrianism">Zoroastrianism</option>
+    <option value="primal-indigenous">primal-indigenous</option>
+
+
+</select>
+<span id="srel" style="display:none;color:red">*Select religion</span>
+<br/>
+
+<label> Date of Birth:</label>
+<input type="date" id="myDate"  placeholder="Enter a date" class="form-control" />
+<span id="smyDate" style="display:none;color:red">*Select DOB</span>
+<br/>
+
+<label> Province:</label>
+<select required id="province" class="form-control" >
+<option value="" disabled selected>--Select Province--</option>
+<option value="Punjab" >Punjab</option>
+<option value="Sindh" >Sindh</option>
+<option value="Khyber Pakhtun Khwa" >Khyber Pakhtun Khwa</option>
+<option value="Balochistan" >Balochistan</option>
+<option value="Gilgit Baltistan" >Gilgit Baltistan</option>
+</select>
+<span id="sprovince" style="display:none;color:red">*Select province</span>
+<br/>
+
+<label> Address</label>
+<textarea id="address" placeholder="Enter address"  class="form-control" ></textarea>
+<span id="sadd" style="display:none;color:red">*Enter address<br/></span>
+<br/>
+
+
+<center><button href="#2" class="btn btn-primary" onclick="test()" type="button" style="background-color:red;width:150px">Next</button><br/><br><br/><br><br/><br>
+</center>
+
+
+
+</form>
+</div>
+</div>
+</div>
+
+<div id="attach" class="tab-pane fade">
+<br>
+<ul class="nav nav-tabs">
+<li class="active" ><a href="#2" data-toggle="tab">Attachments</a></li></ul>
+
+<div class="tab-content">
+<div id="2" class="tab-pane fade in active">
+<br><br>
+<center>
+
+<img src="img/government-of-pakistan.png"/ style="height:200px" id="check"><br><br><br>
+</center>
+
+
+
+
+<label style="color:blue" id="app">Applicant Picture:</label>
+<input  type="file" id="myPics"  onchange="appPic()" /><br>
+<label style="color:blue" id="cn">Cnic:</label>
+<input  type="file" id="myPics2"   onchange="cnicPic()" /><br>
+<label style="color:blue"id="fcn">Father Cnic:</label>
+<input  type="file" id="myPics3"   onchange="fcnicPic()"/><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+<center><button type="submit" style="background-color:red;color:white;height:30px;width:100px" onclick="test2()" >Submit</button>
+</center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+
+<div id="comm" class="tab-pane fade">
+<br>
+<ul class="nav nav-tabs">
+<li class="active"><a href="#3" data-toggle="tab">Comments</a></li></ul>
+
+
+<div class="tab-content">
+<div  id="3" class="tab-pane fade in active">
+<h2>Leave Your Valuable Comments</h2><br><br>
+<table>
+<tr>
+<td><label style="padding-left:30px">Comments:</label><br><br></td>
+<td><textarea id="co" placeholder="Enter Your Comments Here" style="margin-left:200px;width:250px;height:70px"></textarea>
+		</br></br></td>
+		
+</tr>
+<tr><td></td>
+<td><button type="submit" style="background-color:red;color:white;margin-left:280px;height:30px;width:100px" onclick="comment()">Submit</button></td>
+
+</tr>
+</table>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+<!--------------------------closing of col-xs-7-------------->
+</div>
+</div>
+
+<!---------------------Quick links---------------------->
+
+
+<div class="col-xs-3"style="height:800px;">
+<hr style="border:2px solid blue"><h2 style="padding-left:50px;color:red"><b>Quick Links</b></h2 ><hr style="border:2px solid blue">
+
+<label style="font-size:25px;padding-left:20px">Before You Apply</label><br><br>
+<ul>
+<li><a href="FAQs.html" target="_blank"><label style="font-size:18px"><u>How to fill the form?</u></label></a></li>
+<li><a href="FAQs.html" target="_blank"><label style="font-size:18px"><u>Requirements</u></label></a></li>
+<li><a href="FAQs.html" target="_blank"><label style="font-size:18px"><u>Verification process</u></label></a></li>
+<li><a href="FAQs.html" target="_blank"><label style="font-size:18px"><u>How much it will cost</u></label></a></li>
+</ul>
+<br><br>
+
+<!--------------------------------------------------------------Marquee-------------------------------------------->
+<div class="scroll-content" >
+<marquee scrollamount="10"
+direction="down"
+behavior="scroll"
+onmouseover="this.stop();" onmouseout="this.start();"  style="height:600px; width:300px;margin-left:25px">
+    
+      
+         <div class="scroll-image">
+           
+		  <a target="_blank" href="Notices_Web/notice 1.html">
+		  <img src="img/how-to-apply-for-passport-online.jpg" height="250px" width="250px"></a>
+          <a target="_blank" href ="Notices_Web/notice 2.html">
+		  <img src="img/How-to-Check-Status-of-Pakistani-Passport.jpg" height="250px" width="250px"></a>
+          <a target="_blank" href ="Notices_Web/notice 3.html">
+		  <img src="img/passport-pakistan-1024.jpg" height="250px" width="250px"></a>
+          <a target="_blank" href ="Notices_Web/notice 4.html">
+		  <img src="img/Online Passport Renewal Pakistan.jpg" height="250px" width="250px"></a>
+          
+		  
+		 </div>
+      
+</marquee>
+</div>
+
+</div>
+
+
+
+<!----------------final closing of col-xs-12------->
+</div>
+</div>
+
+
+</body> 
+<footer id="foot">
+
+<div class="scroll-content">
+<marquee scrollamount="10"
+direction="left"
+behavior="scroll"
+onmouseover="this.stop();" onmouseout="this.start();"bgcolor="black" >
+    <div class="scroll-row">
+      <div class="scroll-block" >
+         <div class="scroll-image"> &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp 
+          <img src="img/impn.png" height="70px" width="190px">
+		  <a target="_blank" href="Notices_Web/notice 1.html"">
+		  <img src="notices/1.jpg" height="90px" width="130px"style="border: 3px solid black;padding: 2px;background-color: #2F4F4F;"></a>
+          <a target="_blank" href ="Notices_Web/notice 2.html">
+		  <img src="notices/2.jpg" height="90px" width="130px"style="border: 3px solid black;padding: 2px;background-color: #2F4F4F;"></a>
+          <a target="_blank" href ="Notices_Web/notice 3.html">
+		  <img src="notices/3.jpg" height="90px" width="130px"style="border: 3px solid black;padding: 2px;background-color: #2F4F4F;"></a>
+          <a target="_blank" href ="Notices_Web/notice 4.html">
+		  <img src="notices/4.jpg" height="90px" width="130px"style="border: 3px solid black;padding: 2px;background-color: #2F4F4F;"></a>
+          <a target="_blank" href ="Notices_Web/notice 5.html">
+		  <img src="notices/5.jpg" height="90px" width="130px"style="border: 3px solid black;padding: 2px;background-color: #2F4F4F;"></a>
+          <a target="_blank" href ="Notices_Web/notice 6.html">
+		  <img src="notices/6.jpg" height="90px" width="130px"style="border: 3px solid black;padding: 2px;background-color: #2F4F4F;"></a>
+          <a target="_blank" href ="Notices_Web/notice 7.html">
+		  <img src="notices/7.jpg" height="90px" width="130px"style="border: 3px solid black;padding: 2px;background-color: #2F4F4F;"></a>
+          <a target="_blank" href ="Notices_Web/notice 8.html">
+		  <img src="notices/8.jpg" height="90px" width="130px"style="border: 3px solid black;padding: 2px;background-color: #2F4F4F;"></a>
+          <a target="_blank" href ="Notices_Web/notice 9.html">
+		  <img src="notices/9.jpg" height="90px" width="130px"style="border: 3px solid black;padding: 2px;background-color: #2F4F4F;"></a>
+          <a target="_blank" href ="Notices_Web/notice 10.html">
+		  <img src="notices/10.jpg" height="90px" width="130px"style="border: 3px solid black;padding: 2px;background-color: #2F4F4F;"></a>
+          <a target="_blank" href ="Notices_Web/notice 11.html">
+		  <img src="notices/11.jpg" height="90px" width="130px"style="border: 3px solid black;padding: 2px;background-color: #2F4F4F;"></a>
+          <a target="_blank" href ="Notices_Web/notice 12.html">
+		  <img src="notices/12.jpg" height="90px" width="130px"style="border: 3px solid black;padding: 2px;background-color: #2F4F4F;"></a>
+          
+		  
+        </div>
+      </div>
+</div>
+</marquee>
+</div>
+<div style = "background-color:black">
+
+<img src="img/government-of-pakistan copy.png" style="height:50px;padding-left:20px"/>
+<label style="color:white;padding-left:300px"> ©2019 Directorate General Immigration and Passports - All rights reserved </label> 
+<a href="http://www.gmail.com" target="_blank"><img src="img/google.png" style="width:30px;margin-left:15%"/></a> &nbsp &nbsp &nbsp 
+<a href="http://www.twitter.com" target="_blank"><img src="img/twiiter-icon.png" style="width:30px"/></a> &nbsp &nbsp &nbsp 
+<a href="http://www.facebook.com" target="_blank"><img src="img/fb.png" style="width:30px;"/></a> &nbsp &nbsp &nbsp 
+<a href="http://www.youtube.com" target="_blank"><img src="img/youtube-logo.png" style="width:30px;"/></a>&nbsp &nbsp &nbsp 
+<a href="http://www.linkedin.com" target="_blank"><img src="img/linkedin-icon.png" style="width:30px;"/></a><br>
+<center><label style="color:white;padding-right:100px"><a href="https://policies.google.com/privacy?hl=en-US" target="_blank"> Privacy Policy | Terms & Conditions</label></a></center>
+</div>
+
+</footer> 
+</html>
